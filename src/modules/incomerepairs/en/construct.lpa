@@ -1,0 +1,108 @@
+Income and repair calculator can tell the income you're going to get and repair cost for weapons, based on point damage on weapons.<br />
+<br />
+Income calculator will give false income if you have a commander that gives you 10%-30% of his income. It will return the income
+without his income, so you can compare it and calculate income from your commander (planet income is also deducted).<br />
+<br />
+Banners give 1% income bonus, bank space is calculated without PPT bonus.<br />
+<br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="4">Income calculator</td>
+</tr>
+<tr align="center">
+	<td>Race</td>
+	<td>Untrained count</td>
+	<td>Miner(+lifer) count</td>
+	<td>Commander</td>
+</tr>
+<tr align="center">
+	<td>
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="10" size="8" name="uu" value="{LC_MODULE_RECDATA[uu]}" /></td>
+	<td><input type="text" maxlength="10" size="8" name="miners" value="{LC_MODULE_RECDATA[miners]}" /></td>
+	<td>
+	<select name="comm">
+	<option value="0">None</option>
+	<option value="1">Yourself</option>
+	<option value="2">Player</option>
+	</select>
+	</td>
+</tr>
+<tr align="center">
+	<td>Officers</td>
+	<td>Realm Alert</td>
+	<td>Nox</td>
+	<td>Banners</td>
+</tr>
+<tr align="center">
+	<td>
+	<select name="off">
+	<option value="0">No officers</option>
+	<option value="10">10% income</option>
+	<option value="15">15% income</option>
+	<option value="20">20% income</option>
+	<option value="25">25% income</option>
+	<option value="30">30% income</option>
+	</select>
+	</td>
+	<td>
+	<select name="defcon">
+	<option value="0">None</option>
+	<option value="10">Low</option>
+	<option value="20">Medium</option>
+	<option value="40">High</option>
+	<option value="70">Critical</option>
+	</select>
+	</td>
+	<td>
+	<input type="checkbox" name="nox" value="1" />
+	</td>
+	<td><input type="checkbox" name="banner" value="1" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="inctype" value="0" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="4">Weapon Repair calculator</td>
+</tr>
+<tr align="center">
+	<td>Weapon Strength</td>
+	<td>Weapon count</td>
+	<td colspan="2">Damage points</td>
+</tr>
+<tr align="center">
+	<td>
+	<select name="strength">
+	<option value="{LC_MODULE_WEAPONSTR}">{LC_MODULE_WEAPONSTR}</option>
+	<option value="{LC_MODULE_WEAPONSTRD}">{LC_MODULE_WEAPONSTRD}</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="12" size="8" name="count" value="{LC_MODULE_RECDATA[count]}" /></td>
+	<td colspan="2"><input type="text" maxlength="4" size="4" name="points" value="{LC_MODULE_RECDATA[points]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="inctype" value="1" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

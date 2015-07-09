@@ -1,0 +1,89 @@
+<b>LegoCalc, version 4</b>, is an application meant to make your playing webbased MMORPG's much easier by giving you various
+ingame calculations. It was entirely written by <a href="mailto:legoless_lotr@hotmail.com">Legoless</a>, who created <a href="http://www.arvystate.net">ArvYStaTe.net</a> team. There were also some friendly players who helped to provide calculation 
+formulas. Special thanks goes to: SGW Admin (Jason), Seijuro Hiko, Agapooka, homer1475, Zeta, Zeratul and others.<br />
+<br />
+<br />
+Calculator will be upgraded as long as it is used and as long as I am alive and have time to make upgrades. This version was created with inspiration 
+from many friends still playing KOC based web games and a challenge to make more complex web-scripts. PHP truly can make wonders. If you have any troubles 
+using the calculator you can check <a href="faq.php">Frequently asked questions</a> page. If you're interested in the calculator history and change log, 
+you can read <a href="history.php">history</a> page.<br />
+<b>Remember</b>: Use the calculator, spread the link, make it popular and useful! If it won't be used at some point, I will remove it. So keep 
+using it and support it.<br />
+<br />
+<h1>Let everyone applaud the return of LegoCalc v4! After more than 2 years of downtime, I finally got around to it and brought it back up again! You are AGAIN free to use the calculator as you please.<br />
+<br />
+And there is more… I received many messages and e-mails about improving and adding new modules. Now finally it is possible. On <a href="www.arvystate.net">ArvYStaTe.net</a> website, under projects category, you will find the source code of ALL modules and translations. They are yours to use. They belong to SGW community, so they are released under GPL license. You are free to implement your own calculators, but may I say I appretiate if you continue to use mine. If someone bothers to write additional modules, or update my own, I encourage you to do so and I will include them into this version. Finally you have it, so USE IT!</h1>
+<br />
+<b>Main features</b><br />
+<br />
+- <i>modules</i><br />
+For version number 4, I have taken a completely different approach. As I am not playing any KOC game anymore, it is very hard to keep up with 
+new updates admins provide every week. And that is the primary reason this calculator is designed to be expandable and customizable. Calculations 
+now work on modules. Each module is loaded by a special script. This way I can enable or disable which modules can be used and it is easy enough 
+to make and add a new module. Everyone can make their own module now. You only need basic PHP knowledge and some 2nd grade mathematics to
+make one. Please note: <b>All files have to be XHTML 1.0 Strict valid!</b><br />
+If you wish to make one, you can download a sample module file <a href="files/sample_module.zip">here</a>. Please do <b>NOT</b> change marked lines,
+because you will only make me lose precious time when adding the module to the application or might even give up before adding it. They're required 
+for the application loading scripts and it could make whole application run incorrectly if changed (there are scripts protecting this of course). 
+If you have any questions regarding making modules, you can ask me on msn or email and I will help you. Also if you notice an error in any of the
+existing modules, do not hesitate to contact me or better the module author (he/she might have better explanation than me).<br />
+There are also some basic calculation functions added in your module by default and they are stored as object in variable $module_reg_functions. If they 
+are useful for your module, you can use them, otherwise you can write your own.<br />
+However for any module to be used in online calculator I will need to verify and test the module once again. You can contact me at <a href="mailto:legoless_lotr@hotmail.com">legoless_lotr@hotmail.com</a>. 
+I need to make sure it works correctly without any bugs. This is required to keep the application running without many errors. 
+And to keep exploiters and hackers away of course (lets face it, SGW was hacked many times as well).<br />
+<br />
+- <i>login system</i><br />
+The login system was least changed from version 2/3. Basically it's point is still just to store changable variables. Application has still no SQL 
+database running behind it. This makes the calculating faster and whole thing more secure (no SQL injections possible, so stop trying). You do <b>NOT</b> 
+have to use your real email address, nor real username. Anything you use will make no difference to the application usage. Saving settings will make 
+logging in even easier, as it will automacilly login if it will detect the cookie. You need cookies enabled and guest account won't work for saving 
+cookies.<br />
+<br />
+- <i>languages</i><br />
+But the application customization doesn't stop here. Version 4 now supports more languages. The main language is English, which will appear when 
+the language is not choosen or availible. You can select the language you wish to use troughout the application when logging in. The languages can 
+also be added. I can't be bothered with translating everything, but it is easy enough for anyone else to do it. You need only basic HTML knowledge, 
+enough to find some text in a file and replace it with different text. Please note that every module needs translating aswell. Main application English language 
+files can be found <a href="files/en_language.zip">here</a>. If you like the application and you would like to use it in your own language, give it a go.<br />
+<br />
+- <i>themes</i><br />
+This version also has a theme (template) system. Which means user-made themes can be added, but setting a theme can only be done by myself. However 
+you are free to design your own theme. Make sure you do <b>NOT</b> remove any of the data inside the {}. That will make the theme work with loading 
+scripts. You can download the legoESM theme (default) <a href="files/legoESM.zip">here</a>. Note that <b>all theme files have to be XHTML 1.0 Strict valid!</b><br />
+<br />
+- <i>game array</i><br />
+This term is used by me to name the number of files that contain game variables such as race bonuses, weapon strength and unit strength. If the calculator 
+has the calculating module, but the data is incorrect you can try writting a game array. It requires nothing else but small PHP knowledge, so you know how 
+to enter variables in PHP file. Of course this goes only for basic KOC calculations such as strike or defense action, other modules are usually based on 
+data specific to module (data set in the module itself) and therefore cannot use global variables. A good example are SGW motherships. They exist only in 
+SGW. But you can choose to write a game array with a module and both will be added if so.<br />
+<br />
+- <i>usage</i><br />
+The calculator usage is very simple. You enter your username and email on left and select wanted language. Then click Enter and you're already in module menu. 
+If you want, you can use the default guest/guestserver.com as the login details. After you have successfully logined (your login might be rejected if you 
+entered a faulty email address - such as 123@123 will not work, has to be in valid format), you will notice a detailed module menu on the right and main 
+module menu on the left, with your login details and global variables. On right you see which games are supported by module and what you will require to use it.
+Select the module by clicking on the name, either on left or right menu. You will be taken to the module menu. It is recommended to read each module's 
+instructions before usage, because it might explain faulties or bugs made by module.<br />
+<br />
+- <i>notepad</i><br />
+The application includes a small notepad in left menu once logged in. This feature was added, so you don't need a notepad open and you can store the temporary 
+numbers, calculations or whatever you need to save. The notepad will be saved for your return, if you select the option to remember settings. Otherwise it will 
+stay active until your session closes. Some characters are disabled to use in notepad such as ', ", {,} to maximize site security.<br />
+<br />
+<b>Beta</b><br />
+<br />
+Application is currently in beta stage. This is not a feature, but it is a warning. Don't be suprised if any error appear. I have my error log, which I will
+check from time to time and fix any errors I can find there or write additional notes in used module. But if you find a calculation error or miscalculation,
+make sure you check it a couple of times before reporting it. Please add enough data that I can understand the error. Beta usually goes on for about few months,
+but I will shorten it to some weeks. When I will feel the application is ready for release, I will remove everything that has something to do with Beta including 
+this paragraph.<br />
+<br />
+<b>Performance</b><br />
+<br />
+Application is build by XHTML 1.0 Strict standard. It is optimized to run normally on 1024x768 or 1280x1024 in world most known browsers such as: 
+Microsoft Internet Explorer 6.0, Microsoft Internet Explorer 7.0, Mozilla FireFox 1.6, Mozilla FireFox 2.0 and Opera 9.0. Other browsers might display 
+small anomalies, which can be corrected. Let me know of such problem. The problem can be theme related or global. Application is usable with cell phones,
+but it might be hard to display. So you see, you put a new theme, another language and new modules and you have completely different application.<br />
+<br />

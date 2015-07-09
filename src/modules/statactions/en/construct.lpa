@@ -1,0 +1,123 @@
+Stat action calculator will help you calculate approximate stat action you want. Select the race and other details, 
+such as weapon strength, weapon count, spy level, weapons on mothership and click Calculate. Returned data from calculator 
+contains the result.<br />
+<br />
+Note: <b>Calculations are valid for FULL tech upgrades (siege, fortification, covert, anticovert) and NO planets.</b><br />
+<br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td>Type</td>
+	<td>Race</td>
+	<td>Weapon strength</td>
+	<td>Weapon count</td>
+	<td>Supers</td>
+	<td>Trained</td>
+	<td>Mercs</td>
+</tr>
+<tr align="center">
+	<td align="left"><b>Attack</b>:</td>
+	<td>
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+	<td>
+	<select name="wstr">
+	<option value="{LC_MODULE_WEAPONSTR}">{LC_MODULE_WEAPONSTR}</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="10" size="3" name="wcount" value="{LC_MODULE_RECDATA[wcount]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="supers" value="{LC_MODULE_RECDATA[supers]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="trained" value="{LC_MODULE_RECDATA[trained]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="mercs" value="{LC_MODULE_RECDATA[mercs]}" /></td>
+</tr>
+<tr align="center">
+	<td align="left"><b>Defense</b>:</td>
+	<td>
+	<select name="racedef">
+	<option value="{LC_MODULE_RACEOPTIOND}">{LC_MODULE_RACENAMED}</option>
+	</select>
+	</td>
+	<td>
+	<select name="wstrdef">
+	<option value="{LC_MODULE_WEAPONSTRD}">{LC_MODULE_WEAPONSTRD}</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="10" size="3" name="wcountdef" value="{LC_MODULE_RECDATA[wcountdef]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="supersdef" value="{LC_MODULE_RECDATA[supersdef]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="traineddef" value="{LC_MODULE_RECDATA[traineddef]}" /></td>
+	<td><input type="text" maxlength="10" size="3" name="mercsdef" value="{LC_MODULE_RECDATA[mercsdef]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="7">
+	<input type="hidden" name="stattype" value="0" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td align="left"><b>Covert</b>:</td>
+	<td>
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+	<td>&nbsp;</td>
+	<td>Spy level:</td><td><input type="text" maxlength="3" size="3" name="lvl" value="{LC_MODULE_RECDATA[lvl]}" /></td>
+	<td>Spies:</td><td><input type="text" maxlength="10" size="5" name="spies" value="{LC_MODULE_RECDATA[spies]}" /></td>
+</tr>
+<tr>
+	<td align="left"><b>AntiCovert</b>:</td>
+	<td>
+	<select name="racedef">
+	<option value="{LC_MODULE_RACEOPTIOND}">{LC_MODULE_RACENAMED}</option>
+	</select>
+	</td>
+	<td>&nbsp;</td>
+	<td>AntiSpy level:</td><td><input type="text" maxlength="3" size="3" name="antilvl" value="{LC_MODULE_RECDATA[antilvl]}" /></td>
+	<td>AntiSpies:</td><td><input type="text" maxlength="10" size="5" name="antispies" value="{LC_MODULE_RECDATA[antispies]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="7">
+	<input type="hidden" name="stattype" value="1" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td align="left"><b>MotherShip</b>:</td>
+	<td>
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+	<td>Weapons <input type="text" maxlength="5" size="5" name="weapons" value="{LC_MODULE_RECDATA[weapons]}" /></td>
+	<td>Shields <input type="text" maxlength="5" size="5" name="shields" value="{LC_MODULE_RECDATA[shields]}" /></td>
+	<td>Fleets <input type="text" maxlength="5" size="5" name="fleets" value="{LC_MODULE_RECDATA[fleets]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="5">
+	<input type="hidden" name="stattype" value="2" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

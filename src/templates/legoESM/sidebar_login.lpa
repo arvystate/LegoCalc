@@ -1,0 +1,60 @@
+		</div>
+		<div id="sidebar">
+			
+			<div class="menu">
+				<span class="menu-top"><span></span></span>
+				<h3>{LC_LOADED_MODULES}</h3>
+				{LC_MODULES_LIST}
+				<h3>{LC_SYS_INFO}</h3>
+				<form action="main.php" method="post">
+				<table width="100%">
+				<tbody>
+				<tr>
+					<td align="right"><b>{LC_LOGIN_USER}</b>:</td>
+					<td align="left">{LC_CURRENT_USER}</td>
+				</tr>
+				<tr>
+					<td align="right"><b>{LC_LOGIN_EMAIL}</b>:</td>
+					<td align="left">{LC_CURRENT_EMAIL}</td>
+				</tr>
+				<tr>
+					<td align="right"><b>{LC_LOGIN_LANG}</b>:</td>
+					<td align="left">{LC_CURRENT_LANG}</td>
+				</tr>
+				<tr>
+					<td align="right"><b>{LC_LOGIN_THEME}</b>:</td>
+					<td align="left">{LC_CURRENT_THEME}</td>
+				</tr>
+				<tr>
+					<td align="right"><b>{LC_LOGIN_TIME}</b>:</td>
+					<td align="left">{LC_CURRENT_TIME}</td>
+				</tr>
+				<tr>
+					<td colspan="2"><h3>{LC_NOTEPAD}</h3></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><textarea name="notepad" rows="6" cols="22">{LC_NOTEPAD_TEXT}</textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+					<input type="submit" name="notepad_clr" value="{LC_NOTEPAD_CLEAR}" />
+					<input type="submit" name="notepad_save" value="{LC_NOTEPAD_SAVE}" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input type="submit" name="mainmenu_submit" value="{LC_LIST_NAME}" /> 
+					<input type="submit" name="logout_submit" value="{LC_LOGOUT}" />
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				</form>
+				<span class="menu-bottom"><span></span></span>
+			</div>
+		</div>
+	

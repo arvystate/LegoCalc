@@ -1,0 +1,5 @@
+<ul class="menu-list">
+	<li>&bull; {LC_LIST_FIRST}</li>
+	<li>&bull; {LC_LIST_MIDDLE}</li>
+	<li class="last">&bull; {LC_LIST_LAST}</li>
+</ul>

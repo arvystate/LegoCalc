@@ -1,0 +1,36 @@
+Calculator will tell you the maximum amount of Naquadah and raided units you can get by striking with entered parameters.<br />
+<br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Your strike action</b></td>
+	<td><b>Enemy defense action</b></td>
+	<td><b>Enemy Naquadah on account</b></td>
+	<td><b>Untrained Units on account</b></td>
+	<td><b>Turns</b></td>
+	<td><b>Relation</b></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="20" size="15" name="strike" value="{LC_MODULE_RECDATA[strike]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="defense" value="{LC_MODULE_RECDATA[defense]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="naq" value="{LC_MODULE_RECDATA[naq]}" /></td>
+	<td><input type="text" maxlength="10" size="5" name="uu" value="{LC_MODULE_RECDATA[uu]}" /></td>
+	<td><input type="text" maxlength="2" size="2" name="turns" value="{LC_MODULE_RECDATA[turns]}" /></td>
+	<td>
+	<select name="relation">
+	<option value="1">Neutral</option>
+	<option value="1.5">At war</option>
+	<option value="2">Both at war</option>
+	</select>
+	</td>
+</tr>
+<tr align="center">
+	<td colspan="6">
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />	
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

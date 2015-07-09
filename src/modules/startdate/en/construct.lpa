@@ -1,0 +1,38 @@
+Please enter your recruit link. Link has to be valid and in this format:<br />
+(http://www.something.com/recruit.php?uniqid=ka1111111111)
+It can be found on the bottom of your command center.<br />
+<br />
+If there is an error, it is most likely because you entered invalid link (stat link and not recruit link) or
+link was manually changed.<br />
+<br />
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="2" align="left"><b>Instructions:</b></td>
+</tr>
+<tr>
+	<td>1.</td><td align="left">Login onto the game.</td>
+</tr>
+<tr>
+	<td>2.<br />&nbsp;</td><td align="left">Find base page (one that shows your username, email; usually opens after logon, url in the address bar should say: base.php).</td>
+</tr>
+<tr>
+	<td>3.</td><td align="left">Scroll down, till the bottom. You will see a link that ends with "uniqid=xx1111111111".</td>
+</tr>
+<tr>
+	<td>4.</td><td align="left">Copy &amp; paste that link into the box on this page.</td>
+</tr>
+<tr>
+	<td>5.</td><td align="left">Click "Calculate".</td>
+</tr>
+</tbody>
+</table>
+<br />
+<form action="main.php" method="post">
+<div class="module-center">
+<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+<b>Enter valid recruitment link below:</b><br />
+<input type="text" maxlength="255" size="50" name="data" value="{LC_MODULE_RECDATA[data]}" /><br />
+<br />
+<input type="submit" name="submit" value="Calculate" /></div>
+</form>

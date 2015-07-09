@@ -1,0 +1,143 @@
+Calculator's first option will tell you the amount of Naquadah you require to upgrade your planet facilities. Enter current facility number, desired 
+facility number and don't forget to select planet size and planet type. Then Click Calculate and returned data will contain the increase 
+and amount.<br />
+<br />
+Another option for calculation is that you enter your current facilities and the number of upgrades you're planning to do. The Calculator will 
+return your final facilities and amount of Naquadah you will require to reach them.<br />
+<br />
+And theres the last option, which is only a defense calculator. Enter how many defenses you wish to buy and calculator will tell you the price. 
+Or you can enter the amount of Naquadah you have and calculator will tell you how many defenses you can buy.<br />
+<br />
+<b>Option 1</b><br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Planet size</b></td>
+	<td><b>Planet type</b></td>
+	<td><b>Current facility number</b></td>
+	<td><b>Desired facility number</b></td>
+</tr>
+<tr>
+	<td>
+	<select name="size">
+	<option value="0">Select size</option>
+	<option value="1">Tiny</option>
+	<option value="2">Very small</option>
+	<option value="3">Small</option>
+	<option value="4">Normal</option>
+	<option value="5">Above average</option>
+	<option value="6">Large</option>
+	<option value="7">Huge</option>
+	<option value="8">Monstrous</option>
+	<option value="9">Mind Blowing</option>
+    </select>
+	</td>
+	<td>
+	<select name="type">
+	<option value="0">Attack</option>
+	<option value="1">Defense</option>
+	<option value="2">Covert</option>
+	<option value="3">Income</option>
+	<option value="4">Unit Production</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="25" size="20" name="start" value="{LC_MODULE_RECDATA[start]}" /></td>
+	<td><input type="text" maxlength="25" size="20" name="end" value="{LC_MODULE_RECDATA[end]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="pl_type" value="0" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />	
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+<b>Option 2</b><br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Planet size</b></td>
+	<td><b>Planet type</b></td>
+	<td><b>Current facility number</b></td>
+	<td><b>Availible Naquadah</b></td>
+</tr>
+<tr>
+	<td>
+	<select name="size">
+	<option value="0">Select size</option>
+	<option value="1">Tiny</option>
+	<option value="2">Very small</option>
+	<option value="3">Small</option>
+	<option value="4">Normal</option>
+	<option value="5">Above average</option>
+	<option value="6">Large</option>
+	<option value="7">Huge</option>
+	<option value="8">Monstrous</option>
+	<option value="9">Mind Blowing</option>
+    </select>
+	</td>
+	<td>
+	<select name="type">
+	<option value="0">Attack</option>
+	<option value="1">Defense</option>
+	<option value="2">Covert</option>
+	<option value="3">Income</option>
+	<option value="4">Unit Production</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="25" size="20" name="start" value="{LC_MODULE_RECDATA[start]}" /></td>
+	<td><input type="text" maxlength="25" size="20" name="naq" value="{LC_MODULE_RECDATA[naq]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="pl_type" value="1" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />	
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+<b>Option 3</b><br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Planet size</b></td>
+	<td><b>Wanted defenses</b></td>
+	<td><b>Naquadah availible</b></td>
+	
+</tr>
+<tr>
+	<td>
+	<select name="size">
+	<option value="0">Select size</option>
+	<option value="1">Tiny</option>
+	<option value="2">Very small</option>
+	<option value="3">Small</option>
+	<option value="4">Normal</option>
+	<option value="5">Above average</option>
+	<option value="6">Large</option>
+	<option value="7">Huge</option>
+	<option value="8">Monstrous</option>
+	<option value="9">Mind Blowing</option>
+    </select>
+	</td>
+	<td><input type="text" maxlength="25" size="20" name="defenses" value="{LC_MODULE_RECDATA[defenses]}" /></td>
+	<td><input type="text" maxlength="25" size="20" name="naq" value="{LC_MODULE_RECDATA[naq]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="pl_type" value="2" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />	
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+

@@ -1,0 +1,38 @@
+Prosimo vnesite vaš rekrut naslov. Naslov mora biti veljaven in v tem formatu:<br />
+(http://www.something.com/recruit.php?uniqid=ka1111111111)
+Ponavadi ga najdete na podnu strani Command Center.<br />
+<br />
+Èe je prišlo do napake, je najveèkrat krivec naslov, ki ste ga vnesli napaèno (mogoèe naslov do statsov namesto rekrut) ali pa je bil link 
+roèno spremenjen.<br />
+<br />
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="2" align="left"><b>Navodila:</b></td>
+</tr>
+<tr>
+	<td>1.</td><td align="left">Prijavite se v igro.</td>
+</tr>
+<tr>
+	<td>2.<br />&nbsp;</td><td align="left">Poišèite base stran (tista, ki prikaže uporabniško ime, email; ponavadi se odpre po prijavi, url v naslovni vrstici bi se moral konèati z: base.php).</td>
+</tr>
+<tr>
+	<td>3.</td><td align="left">Scrollajte do podna. Opazili boste povezavo, ki se konèa z "uniqid=xx1111111111".</td>
+</tr>
+<tr>
+	<td>4.</td><td align="left">Skopirajte povezavo v okence na tej strani.</td>
+</tr>
+<tr>
+	<td>5.</td><td align="left">Kliknite "Izraèunaj".</td>
+</tr>
+</tbody>
+</table>
+<br />
+<form action="main.php" method="post">
+<div class="module-center">
+<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+<b>Vnesite veljaveno rekrut povezavo:</b><br />
+<input type="text" maxlength="255" size="50" name="data" value="{LC_MODULE_RECDATA[data]}" /><br />
+<br />
+<input type="submit" name="submit" value="Izraèunaj" /></div>
+</form>

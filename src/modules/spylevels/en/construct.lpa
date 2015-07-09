@@ -1,0 +1,54 @@
+You have 2 options to calculate spy levels. First one requires start spy level and desired spy level.<br />
+Second option requires start spy level and amount of Naquadah availible to upgrade.<br />
+<br />
+Calculation can be used for anti-spy levels as well, the cost is the same.<br />
+<br />
+It is allowed to enter resources with commas (example: 1,000,000,000).<br />
+<br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="2"><b>Option 1</b>:</td>
+</tr>
+<tr>
+	<td>Current Spy Level</td>
+	<td>Desired Spy Level</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="6" size="6" name="start" value="{LC_MODULE_RECDATA[start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="end" value="{LC_MODULE_RECDATA[end]}" /></td>
+	<td>
+	<input type="submit" name="submit" value="Calculate" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="hidden" name="type" value="0" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td colspan="2"><b>Option 2</b>:</td>
+</tr>
+<tr>
+	<td>Current Spy Level</td>
+	<td>Availible Naquadah</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="6" size="6" name="start" value="{LC_MODULE_RECDATA[start]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="naq" value="{LC_MODULE_RECDATA[naq]}" /></td>
+	<td>
+	<input type="submit" name="submit" value="Calculate" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="hidden" name="type" value="1" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

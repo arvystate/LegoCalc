@@ -1,0 +1,345 @@
+/*-----------------------------------------*/
+/* Start of style.css                      */
+/*-----------------------------------------*/
+
+/*-----------------------------------------*/
+/* Main settings                           */
+/*-----------------------------------------*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	color: #536482;
+	background-color: #53575E;
+	font-size: 100%;
+}
+
+body
+{
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	color: #FFAE7C;
+	background-color: #53575E;
+	font-size: 62.5%;
+	margin: 0;
+	text-align: center;
+}
+
+a
+{
+	color: #FFAE7C;	
+	text-decoration: underline;
+}
+a:visited
+{
+	color:#FFAE7C;
+}
+a:hover
+{
+	color: #990000;
+	text-decoration: underline;
+}
+
+input, textarea, select, option
+{
+	background-color: #33170C;
+	border: 1px solid #FFAE7C;
+	color: #FFAE7C;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+td
+{
+	padding: 1px;
+}
+
+/*-----------------------------------------*/
+/* Page structure                          */
+/*-----------------------------------------*/
+
+#rap
+{
+	width: 910px;
+	background: #FFFFFF url("images/bg_body.gif") repeat-y 0 0;
+	margin: 10px auto;
+	text-align: left;
+	padding: 0;
+}
+
+span.side-left, span.side-right
+{
+	display: block;
+	width: 20px;
+	height: 150px;
+	background: url("images/sides_top.gif") no-repeat;
+}
+span.side-left
+{
+	background-position: 0 0;
+	float: left;
+	margin-right: 10px;
+}
+span.side-right
+{
+	background-position: 100% 0;
+	float: right;
+}
+span.fcorners-bottom, span.fcorners-bottom span
+{
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-image: url("images/corners_bottom.gif");
+	margin: 0;
+	}
+span.fcorners-bottom
+{
+	background-position: 0 0;
+}
+span.fcorners-bottom span
+{
+	background-position: 100% -20px;
+}
+/*-----------------------------------------*/
+/* Modules                                 */
+/*-----------------------------------------*/
+
+div.module-req
+{
+	font-style: italic;
+}
+
+div.module-center
+{
+	text-align: center;
+}
+
+div.module-retdata
+{
+	color: #FF0000;
+	font-weight: bold;
+	padding-top: 4px;
+}
+
+td.module-top
+{
+	border-bottom: 1px solid #643420;
+}
+
+td.module-bottom
+{
+	border-bottom: 1px solid #643420 ;
+	padding-bottom: 3px;
+}
+
+/*-----------------------------------------*/
+/* FAQ                                     */
+/*-----------------------------------------*/
+
+#faq ul
+{
+	list-style: none;
+}
+
+#faq li
+{
+	padding-left: 10px;
+}
+
+span.faq-module-name
+{
+	font-style: italic;
+	padding-left: 5px;
+}
+
+td.faq-top
+{
+	border-bottom: 1px solid #643420;
+}
+
+td.faq-name
+{
+	font-weight: bold;
+	border-bottom: 1px solid #643420;
+}
+
+td.faq-module
+{
+	font-style: italic;
+	border-bottom: 1px solid #643420;
+}
+
+td.faq-empty
+{
+	border-bottom: 1px solid #643420;
+
+}
+
+td.faq-faq-q-a
+{
+	border-bottom: 1px solid #643420 ;
+	padding-bottom: 3px;
+}
+
+/*-----------------------------------------*/
+/* Header                                  */
+/*-----------------------------------------*/
+
+#page-header
+{
+	background: url("images/bg_header.gif") repeat-x 0 0;
+	height: 150px;
+	clear: both;
+}
+
+body div.header
+{
+	background-repeat: no-repeat;
+	width: 850px;
+	height: 129px;
+	float: left;
+	margin-top: 21px;
+	background-image: url("images/header.jpg");
+}
+
+/*-----------------------------------------*/
+/* Body                                    */
+/*-----------------------------------------*/
+
+#page-body
+{
+	margin: 0 30px;
+	clear: both;
+}
+
+#main
+{
+	width: 590px;
+	float: right;
+	clear: both;
+	padding-top: 5px;
+	text-align: left;
+}
+
+#main ul
+{
+	list-style: none;
+}
+
+#main h3
+{
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*-----------------------------------------*/
+/* Sidebar                                 */
+/*-----------------------------------------*/
+
+#sidebar
+{
+	width: 230px;
+	float: left;
+}
+
+#sidebar h3
+{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div.menu
+{
+	padding: 0 10px;
+	background-color: #150C05;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.menu p
+{
+	font-size: 1em;
+	margin: 3px 0;
+}
+
+div.menu span.menu-top,
+div.menu span.menu-bottom
+{
+	margin: 0 -10px;
+}
+
+div.menu h3
+{
+	text-align: center;
+	border-bottom: 1px solid #B65C44;
+}
+/*-----------------------------------------*/
+/* Main Menu list                          */
+/*-----------------------------------------*/
+
+ul.menu-list
+{
+	list-style: none;
+}
+ul.menu-list li
+{
+	padding: 5px 0 4px 0;
+	border-bottom: 1px solid #643420;
+	margin: 0;
+}
+ul.menu-list li.last
+{
+	border-bottom: none;
+}
+
+/*-----------------------------------------*/
+/* Footer                                  */
+/*-----------------------------------------*/
+
+#page-footer
+{
+	background: url("images/bg_footer.gif") repeat-x 0 100%;
+	clear: both;
+	padding-top: 15px;
+	}
+#page-footer p
+{
+	border-top: 1px solid #643420;
+	margin: 15px 30px 0 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/*-----------------------------------------*/
+/* CopyRight                               */
+/*-----------------------------------------*/
+
+#copyright
+{
+	padding: 0 5px 5px 5px;
+	text-align: center;
+	color: #232323;
+}
+
+#copyright a
+{
+	color: #222222;
+}
+
+#copyright a:hover
+{
+	color:#777777;
+}
+
+/*-----------------------------------------*/
+/* End of style.css                        */
+/*-----------------------------------------*/
+
+	

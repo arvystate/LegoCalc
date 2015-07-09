@@ -1,0 +1,21 @@
+	</div>
+	<div id="page-footer">
+		<p><b>{LC_DISC_NAME}</b>: {LC_DISCLAIMER}<br />
+		<br />
+		<b>
+		<a href="index.php">{LC_INDEX}</a> &bull; <a href="main.php">{LC_MAIN}</a> &bull; 
+		<a href="history.php">{LC_HISTORY}</a> &bull; <a href="faq.php">{LC_FAQ}</a>
+		</b>
+		</p>
+		<span class="fcorners-bottom"><span></span></span>
+	</div>
+</div>
+<div id="copyright">
+	LegoCalc v{LC_VERSION} &copy; 2007 <a href="http://www.arvystate.net">ArvYStaTe.net development team</a>
+	&bull; legoESM theme by <a href="mailto:legoless_lotr@hotmail.com">Legoless</a><br />
+
+	
+	Generation Time : {LC_GENERATION} seconds | MySQL : {LC_MYSQL} | Valid <a href="http://validator.w3.org/check/referer"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr> 1.0 <strong>Strict</strong></a>
+</div>
+</body>
+</html>

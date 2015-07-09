@@ -1,0 +1,110 @@
+Calculator will tell you how many spies you need to send to successfully sabotage target player. Enter the required data and click calculate.<br />
+<br />
+You can also enter the sabotage damage you will do. For this you will also need their relation to them (and from them to you) and their weapon power. 
+You can get weapon power by spying your target. You take their every weapon power and multiply it by number of weapons they have. Then you sum up all 
+all the powers. To explain, lets say the target has 10 weapons with strength of 2560 (Goa'uld best attack weapon) and 20 weapons with strength of 1000. 
+Means their weapon power is 10 * 2560 + 20 * 1000 = 25600 + 20000 = 45600. The sabotaging always goes by destroying weakest weapons first, so if you had
+20000 sabotage power and they have 45600 weapon power, 20 weapons with strength of 1000 would be destroyed. You can see how many weapons you will 
+destroy then, as this calculator allows only lowest weapons to be calculated. Weapon destroying is going on until your sabotage power is 0.<br />
+<br /> 
+The spies calculator is rounded to 100 spies, means it is approximate, as the minimum you can sab with is 100, and max spies you can sab with is 50,000,000.
+If you would need more than 50,000,000 spies to sabotage, the script stops (this is to reduce server load). It is allowed to enter action with commas.<br />
+<br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Enemy Covert Action</b></td>
+	<td><b>Enemy Alert Level</b></td>
+	<td><b>Your Covert Action</b></td>
+	<td><b>Your spy level</b></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="20" size="14" name="e_covert" value="{LC_MODULE_RECDATA[e_covert]}" /></td>
+	<td>
+	<select name="e_alert">
+	<option value="0">None</option>
+	<option value="10">Low</option>
+	<option value="20">Medium</option>
+	<option value="40">High</option>
+	<option value="70">Critical</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="20" size="14" name="y_covert" value="{LC_MODULE_RECDATA[y_covert]}" /></td>
+	<td><input type="text" maxlength="3" size="2" name="y_spylvl" value="{LC_MODULE_RECDATA[y_spylvl]}" /></td>
+</tr>
+<tr>
+	<td colspan="4" align="center"><b>Your race</b></td>
+</tr>
+<tr>
+	<td colspan="4" align="center">
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="type" value="0" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+<b>Sabotage damage calculation</b><br />
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Enemy Covert Action</b></td>
+	<td><b>Enemy Alert Level</b></td>
+	<td><b>Your Covert Action</b></td>
+	<td><b>Enemy Weapon Power</b></td>
+</tr>
+<tr>
+	<td><input type="text" maxlength="20" size="20" name="e_covert" value="{LC_MODULE_RECDATA[e_covert]}" /></td>
+	<td>
+	<select name="e_alert">
+	<option value="0">None</option>
+	<option value="10">Low</option>
+	<option value="20">Medium</option>
+	<option value="40">High</option>
+	<option value="70">Critical</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="20" size="20" name="y_covert" value="{LC_MODULE_RECDATA[y_covert]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="e_wpower" value="{LC_MODULE_RECDATA[e_wpower]}" /></td>
+</tr>
+<tr>
+	<td><b>Lowest Enemy Weapon Strength</b></td>
+	<td><b>Amount of weakest enemy weapons</b></td>
+	<td><b>Relation</b></td>
+</tr>
+<tr>
+	<td>
+	<select name="strength">
+	<option value="{LC_MODULE_WEAPONSTR}">{LC_MODULE_WEAPONSTR}</option>
+	<option value="{LC_MODULE_WEAPONSTRD}">{LC_MODULE_WEAPONSTRD}</option>
+	</select>
+	</td>
+	<td><input type="text" maxlength="8" size="6" name="e_weapons" value="{LC_MODULE_RECDATA[e_weapons]}" /></td>
+	<td>
+	<select name="relation">
+	<option value="1">Neutral</option>
+	<option value="1.5">At war</option>
+	<option value="2">Both at war</option>
+	</select>
+	</td>
+</tr>
+<tr align="center">
+	<td colspan="7">
+	<input type="hidden" name="type" value="1" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

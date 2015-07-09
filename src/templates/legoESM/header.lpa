@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="{LC_LANG}" xml:lang="{LC_LANG}">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset={LC_CHARSET}" />
+<meta name="resource-type" content="document" />
+<meta name="language" content="{LC_LANG}" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2007 ArvYStaTe.net" />
+<meta name="keywords" content="calculator, calc, calculation, gaming, sgw, online, mmorpg, game, stargatewars, ascension, arvystate" />
+<meta name="description" content="MMORPG Calculator" />
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>{LC_APPNAME} &bull; {LC_PAGENAME}</title>
+
+<link href="templates/legoESM/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="rap">
+	<div id="page-header">
+		<span class="side-left"></span>
+		<div class="header"></div>
+		<span class="side-right"></span>
+	</div>
+
+	<div id="page-body">
+		<div id="main">
+
+	

@@ -1,0 +1,90 @@
+You have option to calculate mothership weapon, shield, fleet capacity and quantity cost.<br />
+Option 1 are slots. You enter your current and desired number of slots and you will receive the amount of Naquadah you require to buy the desired 
+slot number. Or you can enter the current number of slots and amount of Naquadah you're willing to spend and you will receive the amount of slots 
+you can buy.<br />
+<br />
+Option 2 are weapons, shields and fleets itself and it works the same way as option 1.<br />
+<br />
+<b>Option 1</b>:
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Quantity upgrade type</b></td>
+	<td><b>Current</b></td>
+	<td><b>Desired</b></td>
+	<td><b>Resources availible</b></td>
+</tr>
+<tr>
+	<td>Weapons:</td>
+	<td><input type="text" maxlength="6" size="6" name="w_start" value="{LC_MODULE_RECDATA[w_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="w_end" value="{LC_MODULE_RECDATA[w_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="w_naq" value="{LC_MODULE_RECDATA[w_naq]}" /></td>
+</tr>
+<tr>
+	<td>Shields:</td>
+	<td><input type="text" maxlength="6" size="6" name="s_start" value="{LC_MODULE_RECDATA[s_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="s_end" value="{LC_MODULE_RECDATA[s_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="s_naq" value="{LC_MODULE_RECDATA[s_naq]}" /></td>
+</tr>
+<tr>
+	<td>Fleets:</td>
+	<td><input type="text" maxlength="6" size="6" name="f_start" value="{LC_MODULE_RECDATA[f_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="f_end" value="{LC_MODULE_RECDATA[f_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="f_naq" value="{LC_MODULE_RECDATA[f_naq]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="mstype" value="0" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>	
+<b>Option 2</b>:
+<form action="main.php" method="post">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+	<td><b>Quantity upgrade type</b></td>
+	<td><b>On start</b></td>
+	<td><b>Desired</b></td>
+	<td><b>Resources availible</b></td>
+</tr>
+<tr>
+	<td>Weapons:</td>
+	<td><input type="text" maxlength="6" size="6" name="w_start" value="{LC_MODULE_RECDATA[w_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="w_end" value="{LC_MODULE_RECDATA[w_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="w_naq" value="{LC_MODULE_RECDATA[w_naq]}" /></td>
+</tr>
+<tr>
+	<td>Shields:</td>
+	<td><input type="text" maxlength="6" size="6" name="s_start" value="{LC_MODULE_RECDATA[s_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="s_end" value="{LC_MODULE_RECDATA[s_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="s_naq" value="{LC_MODULE_RECDATA[s_naq]}" /></td>
+</tr>
+<tr>
+	<td>Fleets:</td>
+	<td><input type="text" maxlength="6" size="6" name="f_start" value="{LC_MODULE_RECDATA[f_start]}" /></td>
+	<td><input type="text" maxlength="6" size="6" name="f_end" value="{LC_MODULE_RECDATA[f_end]}" /></td>
+	<td><input type="text" maxlength="20" size="15" name="f_naq" value="{LC_MODULE_RECDATA[f_naq]}" /></td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<select name="race">
+	<option value="{LC_MODULE_RACEOPTION}">{LC_MODULE_RACENAME}</option>
+	</select>
+	</td>
+</tr>
+<tr align="center">
+	<td colspan="4">
+	<input type="hidden" name="mstype" value="1" />
+	<input type="hidden" name="module_nr" value="{LC_MODULE_NR}" />
+	<input type="submit" name="submit" value="Calculate" />
+	</td>
+</tr>
+</tbody>
+</table>
+</form>

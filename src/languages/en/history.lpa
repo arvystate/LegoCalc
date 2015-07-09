@@ -1,0 +1,59 @@
+<b>Change Log:</b><br />
+<br />
+<ul>
+	<li>&bull; [20/2/12] - Released module source code and translations</li>
+	<li>&bull; [25/8/07] - HTML correction in sabotage module</li>
+	<li>&bull; [11/8/07] - Application put into beta stage</li>
+</ul>
+<br />
+<b>How did everything begin?</b><br />
+<br />
+While I was playing StarGateWars Main, I realized I don't really know when I started. So I remembered that I noticed some hints on how start 
+date time could be calculated. First time when I found some free time, I went to create myself a calculator.<br />
+<br />
+<b>Versions over time</b><br />
+<br />
+Time after time, new version was released, with number 4 being the last. Every version featured everything the previous version had, plus some 
+new features not seen yet. Version timeline as follows:<br />
+<br />
+<i>version 1 - November 2006</i><br />
+<br />
+With a little updated instructions, that was version 1. It only featured a start date calculator for various Kings of Chaos based games. It was 
+published on SGW forums for everyone to use.<br />
+<br />
+<i>version 2 - March 2007</i><br />
+<br />
+Version 2 was created originally some time after Seijuro's calculator was taken offline (some time after Visentinel has quit SGW). It featured 
+start date function, with addition of new calculations such as: unit production, spy levels, mothership cost, stat actions, income, repairs and 
+sabotage calculator. After a small remake (version 2.0.5), calculator got a new nice-looking design, login system was added and a game selector. 
+However the game selector was never really used, as only game ever to be added was StarGateWars Main.<br />
+Calculator was published in beta phase and people started testing. After some bug fixes and small updates, the calculator reached final stage 
+in May 2007 (although I forgot to update the beta titles, so officially it was still beta). Planets stayed disabled, due to insufficient data.<br />
+<br />
+<i>version 3 - June 2007</i><br />
+<br />
+About 2 months later (end of June) I started on production of a new version of the calculator. This one would feature a few more calculations, 
+including the long-awaited planets. It would also feature a theme system, where themes could be swapped. However this version never reached beta 
+stage, the production stopped after few weeks in alpha stage due to lack of time.<br />
+<br />
+<i>version 4 - August 2007</i><br />
+<br />
+The next version of the LegoCalc is a revolutionary one. It's creation and features were inspired by phpBB 3.0. For a change, it was built from 
+scratch, not like before versions which were only updates or remakes. System is built by highest website standards and it's very complex and the 
+core is stable since beta. Current stage is beta and it reach final few weeks after publishing. As I'm not playing SGW anymore, this version has 
+included an user-customizable interface. Users can make their own modules for ingame calculations, create new themes (if existing ones get old) 
+and translate the application for wider use.<br />
+Another useful feature is also added. The application will remember your login details if choosen (in the login menu) and then you don't have to 
+login again if you close the page. And of course next time you open the page, everything will be in your choosen language already.<br />
+<br />
+<i>the downtime - 2010 - 2012</i>
+<br />
+As you have all noticed, the webhosting has been down for a while. This is not due to lack of funding, but because the hosting company (RadixHosting) was defunct and had stopped it's all services. They did not even bother to know their customers about their problems. But once I got ahold of the facts, I had much to little time to actually sort things out. My webpage was down for ages. And for that I apologize. Now, few years later I finally came around to it. So, here it is, back up again. Sorry I will <b>not</b> start playing again, but I am still around and will support the calculator, as long as possible.<br />
+<br />
+<b>The Future of LegoCalc</b><br />
+<br />
+I believe this is one of the top places such an application can reach. Adding new modules will keep the application up to date and therefore, 
+no new version is needed. You may expect bug fixes and small updates, but I don't think I will be making another version. Unless it is really 
+necessary or I am motivated by something really good. Otherwise version 4.0 will stay online as long as it is used.<br />
+<br />
+Legoless
