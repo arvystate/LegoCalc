@@ -6,11 +6,22 @@
 
 # Details
 Platform: **Cross-platform** (*web application*)
+
 Technologies: **(X)HTML**, **CSS**, **PHP**
 
 # Screenshots
 
+### Module selection
 
+![LegoCalc](https://raw.githubusercontent.com/arvystate/LegoCalc/master/Resources/legocalc_1.jpg)
+
+### Simple Module
+
+![LegoCalc Simple Module](https://raw.githubusercontent.com/arvystate/LegoCalc/master/Resources/legocalc_2.jpg)
+
+### Complex Module
+
+![LegoCalc Complex Module](https://raw.githubusercontent.com/arvystate/LegoCalc/master/Resources/legocalc_3.jpg)
 
 # What is this now?
 
